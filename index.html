@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Afafi Madyan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Afafi Madyan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#about" onclick="toggleMenu()">Skill</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Afafi Madyan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Afafi Madyan</h1>
+        <p class="section__text__p2">Beginner Programmer
+          
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='www.linkedin.com/in/afafi-madyan-a21365223'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Madyan02'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/certificate.png"
+                alt="certificate icon"
+                class="icon"
+              />
+              <h3>Certificate</h3>
+              <p>Frontend Development<br />by HackerRank</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>5th Semester Student<br />Informatics Engineering, <br/>Universitas Mercu Buana</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Saya adalah mahasiswa di Universitas Mercu Buana, yang sedang mengejar gelar Sarjana di bidang Ilmu Komputer, dengan minat yang besar dalam teknologi dan layanan. Saya terus meningkatkan pengetahuan saya melalui pembelajaran daring, mata kuliah yang relevan, dan keterlibatan aktif dalam organisasi kampus, termasuk Dewan Perwakilan Mahasiswa (DPM) Universitas Mercu Buana. Saya berkomitmen untuk mengembangkan keterampilan pemrograman saya dengan memanfaatkan berbagai kesempatan untuk memperdalam kemampuan teknis dan profesional. Dengan kemampuan ini, saya bercita-cita untuk berkontribusi dalam pengambilan keputusan berbasis data, mendukung inovasi teknologi, dan berperan dalam mewujudkan visi Indonesia Emas 2045. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/bawah.png"
+        alt="bawah.png icon"
+        class="bawah"
+        onclick="location.href='./#skill'"
+      />
+    </section>
+
+    <!-- Skill -->
+    <section id="skill">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skill</h1>
+      <div class="skill-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skill-sub-title">Hard Skill</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skill-sub-title">Soft Skill</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>komunikatif</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>bekerja tim/Individu</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bahasa Indonesia</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Publik Speaking</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Berpikir kreatif dan Analisis</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/bawah.png"
+        alt="bawah.png icon"
+        class="icon bawah.png"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+
+    <!-- SERTIVIKAT -->
+    <section id="certificate">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Certificate</h1>
+      <div class="certificate-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sertifikat-1.png"
+                alt="setifikat 1"
+                class="certificate-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sertifikat React </h2>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+           <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div> 
+          </div>  -->
+        </div>
+      </div>
+      <img
+        src="./assets/bawah.png"
+        alt="bawah.png icon"
+        class="bawah"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- pengalaman -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Organisasi</h2>
+            <div class="article-container">
+              <article class="experience-article">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> SMA Negri 10 Kota Tangerang Selatan / Anggota Seksi</h3>
+                  <p style="font-size: 10px;"> 2019 - 2020,  SMA Negri 10 Kota Tangerang Selatan</p>
+                  <h4>Bidang Apresiasi Seni.</h4>
+                  <p>Menyumbang ide dan saran untuk program kerja organisasi serta membantu program kerja yang dilaksanakan.</p>
+                </div>
+              </article>
+              <article class="experience-article">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DPM Fasilkom</h3>
+                  <p></p>
+                  <p class="basic">Mengawasi Kinerja Lembaga di Ormawa Fasilkom</p>
+                  <ul style="padding: 15px;">
+                    <li>Memantau jalannya organisasi mahasiswa (BEM, Himpunan Mahasiswa, UKM, dll.) agar tetap sesuai dengan aturan dan visi-misi yang telah ditetapkan.</li>
+                    <li>Mengevaluasi apakah kegiatan yang dilakukan berjalan dengan baik, efektif, dan memberi manfaat bagi mahasiswa.</li>
+                    <li>Mengidentifikasi adanya penyimpangan dalam pelaksanaan tugas dan tanggung jawab organisasi.</li>
+                  </ul>
+                  <p class="basic"> Merekomendasikan Penerimaan atau Penolakan Program Kerja</p>
+                  <ul style="padding: 15px;">
+                    <li>Meninjau dan menilai rancangan program kerja yang diajukan oleh Ormawa Fasilkom.</li>
+                    <li>Jika program kerja dianggap layak dan bermanfaat, komisi pengawas dapat memberikan rekomendasi penerimaan.</li>
+                    <li>Jika terdapat ketidaksesuaian atau tidak memenuhi standar, komisi pengawas dapat merekomendasikan perbaikan atau bahkan penolakan.</li>
+                  </ul>
+                  <p class="basic">Meninjau dan Mengawasi Rencana Anggaran Ormawa Fasilkom</p>
+                  <ul style="padding: 15px;">
+                    <li>Mengawasi pengelolaan dana agar anggaran yang diajukan dan digunakan oleh Ormawa sesuai dengan aturan dan transparan.</li>
+                    <li>Memastikan bahwa anggaran yang digunakan benar-benar untuk kepentingan mahasiswa dan organisasi.</li>
+                    <li>Mengajukan saran atau koreksi jika ada anggaran yang dinilai tidak sesuai atau kurang efektif.</li>
+                  </ul>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">intern</h2>
+            <div class="article-container">
+              <article class="experience-article">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Entry</h3>
+                  <p style="font-size: 10px;">Mei  2023 -  Februari 2024,  Universitas Mercu Buana</p>
+                  <p class="basic">Menginput dan Memverifikasi Data:</p>
+                  <ul style="padding: 15px;">
+                    <li>Menginput data dari berbagai sumber ke dalam sistem database perusahaan dengan akurasi tinggi.</li>
+                    <li>Memverifikasi keakuratan dan konsistensi data untuk memastikan integritas database.</li>
+                    <li>Menggunakan perangkat lunak manajemen data seperti Microsoft Excel dan Google Sheets untuk mengelola dan menganalisis data.</li>
+                  </ul>
+                  <p class="basic">Pemrosesan dan Pemeliharaan Data:</p>
+                  <ul style="padding: 15px;">
+                    <li>Menyusun dan mengelompokkan data untuk laporan mingguan dan bulanan kepada manajemen.</li>
+                    <li>Memastikan semua data terbaru dan bebas dari duplikasi atau kesalahan.</li>
+                    <li>Mengembangkan dan memelihara prosedur pengelolaan data standar untuk meningkatkan efisiensi operasional.</li>
+                  </ul>
+                </div>
+              </article>
+              
+              
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/bawah.png"
+        alt="bawah.png icon"
+        class="bawah"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- projects -->
+    <!-- <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sertifikat-1.png"
+                alt="setifikat 1"
+                class="sertifikat-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sertifikat React </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> 
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/bawah.png"
+        alt="bawah.png icon"
+        class="icon bawah.png"
+        onclick="location.href='./#contact'"
+      />
+    </section> -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:afafimadyan94@gmail.com?subject=Halo&body=Ini%20adalah%20pesan%20dari%20tautan.">afafimadyan94@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="www.linkedin.com/in/afafi-madyan-a21365223">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <!-- <li><a href="#projects">Projects</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025
+         Afafi Madyan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
